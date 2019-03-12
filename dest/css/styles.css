@@ -1,0 +1,325 @@
+/* Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: #424649;
+  background: #DDDDDD;
+}
+
+.cms-page-view .column.main img {
+  margin: 0 auto;
+}
+
+.columns .column.main {
+  padding-bottom: 0;
+}
+
+.modal-popup .modal-footer {
+  display: none;
+}
+
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #FFFFFF;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
+}
+
+.content-wrapper h1 {
+  font-size: 60px;
+  line-height: 1.3;
+}
+
+.content-wrapper h2 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+.content-wrapper h3 {
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+.content-wrapper h4 {
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #424649;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  color: #424649;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #424649;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.content-wrapper li {
+  font-size: 16px;
+}
+
+.content-wrapper .cta {
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.content-wrapper .cta:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper .slick-list {
+  margin-left: -18px;
+}
+
+.content-wrapper .slick-prev, .content-wrapper .slick-next {
+  font-size: 0;
+}
+
+.content-wrapper .slick-prev:before, .content-wrapper .slick-next:before {
+  color: none;
+}
+
+.content-wrapper .slick-arrow {
+  border: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content-wrapper .button-cta {
+  font-size: 1.4rem;
+  background-color: #004098;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border: 1px solid #004098;
+}
+
+.content-wrapper .button-cta:hover {
+  background-color: #B1C9E8;
+}
+
+.content-wrapper .clearfix {
+  display: block;
+}
+
+.content-wrapper .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .content-wrapper .clearfix {
+  height: 1px;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero .hero-img {
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+#hero .heroBox {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 48%;
+  padding: 2rem;
+  text-align: left;
+}
+
+#hero .heroBox .heroBox-title {
+  width: 50%;
+}
+
+#hero .heroBox h1 {
+  margin-top: 0;
+  font-weight: 400;
+}
+
+#hero .heroBox p {
+  margin-bottom: 4rem;
+}
+
+#info {
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#info .infoImg-left {
+  width: 25%;
+}
+
+#info .info-text {
+  width: 50%;
+  text-align: center;
+}
+
+#info .infoImg-right {
+  width: 80%;
+}
+
+#products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#products .product {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#regimen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+#regimen .regimen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#scm-banner {
+  width: 100%;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */
