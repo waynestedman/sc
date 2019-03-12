@@ -1,7 +1,7 @@
 {
-  "name": "ovo",
-  "version": "1.2.1",
-  "description": "ovo product page",
+  "name": "sc",
+  "version": "1.0.1",
+  "description": "super collagen products page",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/waynestedman/OVO.git"
+    "url": "https://github.com/waynestedman/sc.git"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.6",
@@ -29,6 +29,6 @@
   },
   "keywords": [
     "DHC",
-    "ovo"
+    "super collagen"
   ]
 }
