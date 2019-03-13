@@ -1,6 +1,6 @@
 // SC Colors:
 // main blue = $blue700
-$scTan: #DCE6F2;
+$scTan: #F6D9B1;
 
 .content-wrapper {
   @keyframes fadeEffect {
@@ -32,7 +32,7 @@ $scTan: #DCE6F2;
   } // hero-img
   .heroBox {
     position: absolute;
-    top: 12%;
+    top: 4%;
     left: 0;
     width: 48%;
     padding: 2rem;
@@ -53,38 +53,68 @@ $scTan: #DCE6F2;
 #info {
   position: relative;
   text-align: left;
-  display: flex;
+  display: inline-block;
+  // display: flex;
 
-  .infoImg-left{
+  .infoImg-left {
+    display: inline-block;
     width: 25%;
+    float: left;
   }
   .info-text {
-    width: 50%;
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
     text-align: center;
   }
   .infoImg-right {
+    display: inline-block;
     width: 80%;
+    // float: right;
+    margin-top: -49.1rem;
+    margin-left: 20%;
   }
 } // info
 #products {
-// background-color: gradient
+  background: linear-gradient(#ffffff 0%, #f6d9b1 70%);
+  margin-top: -2rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 
   .product {
     text-align: center;
     flex-direction: column;
-  }
+    width: 40%;
+  } // product
 } //products
 #regimen {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  text-align: center;
 
-  .regimen {
-    flex-direction: column;
+  h2 {
+    width: 100%;
   }
-} //regimen
+  .regimen-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .regimen {
+      flex-direction: column;
+      width: 30%;
+
+      img {
+        max-width: 295px;
+      }
+      span {
+        font-weight: 400;
+      }
+    } //regimen
+  } //regimen-wrapper
+} //regimen section
 #scm-banner {
   width: 100%;
 } //scm-banner

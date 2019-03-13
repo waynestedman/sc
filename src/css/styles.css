@@ -225,7 +225,7 @@ body {
 
 #hero .heroBox {
   position: absolute;
-  top: 12%;
+  top: 4%;
   left: 0;
   width: 48%;
   padding: 2rem;
@@ -248,40 +248,71 @@ body {
 #info {
   position: relative;
   text-align: left;
-  display: flex;
+  display: inline-block;
 }
 
 #info .infoImg-left {
+  display: inline-block;
   width: 25%;
+  float: left;
 }
 
 #info .info-text {
-  width: 50%;
+  display: inline-block;
+  width: 40%;
+  margin: 0 auto;
   text-align: center;
 }
 
 #info .infoImg-right {
+  display: inline-block;
   width: 80%;
+  margin-top: -49.1rem;
+  margin-left: 20%;
 }
 
 #products {
+  background: linear-gradient(#ffffff 0%, #f6d9b1 70%);
+  margin-top: -2rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 #products .product {
   text-align: center;
   flex-direction: column;
+  width: 40%;
 }
 
 #regimen {
+  text-align: center;
+}
+
+#regimen h2 {
+  width: 100%;
+}
+
+#regimen .regimen-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
-#regimen .regimen {
+#regimen .regimen-wrapper .regimen {
   flex-direction: column;
+  width: 30%;
+}
+
+#regimen .regimen-wrapper .regimen img {
+  max-width: 295px;
+}
+
+#regimen .regimen-wrapper .regimen span {
+  font-weight: 400;
 }
 
 #scm-banner {
