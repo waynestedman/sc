@@ -246,7 +246,7 @@ body {
 }
 
 #hero .heroBox .heroBox-title {
-  width: 50%;
+  width: 40%;
 }
 
 #hero .heroBox h1 {
@@ -285,10 +285,9 @@ body {
 }
 
 #products {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(70%, #f6d9b1));
-  background: -o-linear-gradient(#ffffff 0%, #f6d9b1 70%);
-  background: linear-gradient(#ffffff 0%, #f6d9b1 70%);
-  margin-top: -2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(80%, #fbecd9));
+  background: -o-linear-gradient(#ffffff 0%, #fbecd9 80%);
+  background: linear-gradient(#ffffff 0%, #fbecd9 80%);
   padding-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;

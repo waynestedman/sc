@@ -233,7 +233,7 @@ body {
 }
 
 #hero .heroBox .heroBox-title {
-  width: 50%;
+  width: 40%;
 }
 
 #hero .heroBox h1 {
@@ -272,8 +272,7 @@ body {
 }
 
 #products {
-  background: linear-gradient(#ffffff 0%, #f6d9b1 70%);
-  margin-top: -2rem;
+  background: linear-gradient(#ffffff 0%, #fbecd9 80%);
   padding-bottom: 4rem;
   display: flex;
   flex-direction: row;
