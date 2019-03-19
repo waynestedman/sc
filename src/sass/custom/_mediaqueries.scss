@@ -109,5 +109,64 @@
 } // min 550 to max 699 - Bigger mobile exceptions
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .content-wrapper {
+    .button-cta {
+      font-size: 1.8rem;
+      padding: .8rem 2.4rem;
+    }
+  }
+  #hero {
+    padding-bottom: 4.4rem;
 
+    .heroBox {
+      top: 1%;
+      padding-left: 3%;
+
+      .heroBox-new {
+        margin-left: 0;
+      }
+      h1 {
+        font-size: 4.6rem;
+        margin-bottom: .6rem;
+      }
+      h3 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+      }
+      h6 {
+        font-size: 1.8rem;
+        padding-right: 0;
+        margin-top: 1.2rem;
+        margin-bottom: 1.8rem;
+      }
+    } // heroBox
+  } //hero
+  #info {
+    .info-text {
+      padding-left: 18%;
+      padding-right: 18%;
+    }
+    .infoImg-right {
+      width: 80%;
+      margin-top: -18rem;
+    }
+  } // info
+  #products {
+    .product {
+      .product-img {
+        margin-top: 0;
+      }
+    }
+  } // products
+  #regimen {
+    .regimen-wrapper {
+      justify-content: space-evenly;
+
+      .regimen {
+        img {
+          max-width: 200px;
+        }
+      }
+    } // regimen-wrapper
+  } // regimen
 } // min 700 to max 1024 - Tablet

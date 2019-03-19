@@ -435,4 +435,52 @@ body {
   }
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .content-wrapper .button-cta {
+    font-size: 1.8rem;
+    padding: .8rem 2.4rem;
+  }
+  #hero {
+    padding-bottom: 4.4rem;
+  }
+  #hero .heroBox {
+    top: 1%;
+    padding-left: 3%;
+  }
+  #hero .heroBox .heroBox-new {
+    margin-left: 0;
+  }
+  #hero .heroBox h1 {
+    font-size: 4.6rem;
+    margin-bottom: .6rem;
+  }
+  #hero .heroBox h3 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+  #hero .heroBox h6 {
+    font-size: 1.8rem;
+    padding-right: 0;
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+  }
+  #info .info-text {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  #info .infoImg-right {
+    width: 80%;
+    margin-top: -18rem;
+  }
+  #products .product .product-img {
+    margin-top: 0;
+  }
+  #regimen .regimen-wrapper {
+    justify-content: space-evenly;
+  }
+  #regimen .regimen-wrapper .regimen img {
+    max-width: 200px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
