@@ -378,20 +378,22 @@ body {
     font-size: 1.8rem;
     padding-right: 0;
   }
-  #info {
-    margin-bottom: -8rem;
-    z-index: 100;
-  }
   #info .infoImg-left {
     width: 20%;
+    float: left;
+    z-index: 4;
   }
   #info .info-text {
-    top: 12%;
-    left: 3rem;
-    width: 88%;
+    position: relative;
+    top: unset;
+    left: unset;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    width: 60%;
     padding: 0;
   }
   #info .info-text h2 {
+    margin-top: 0;
     font-size: 4rem;
   }
   #info .info-text h6 {
@@ -400,7 +402,8 @@ body {
   #info .infoImg-right {
     float: right;
     width: 50%;
-    margin-top: 22rem;
+    margin-top: -20rem;
+    max-height: 380px;
   }
   #products {
     flex-direction: column;
@@ -410,7 +413,7 @@ body {
     margin: 0 auto 4rem auto;
   }
   #products .product .product-img {
-    z-index: 5;
+    margin-top: 0;
   }
   #regimen h2 {
     width: 90%;
@@ -429,9 +432,6 @@ body {
 @media only screen and (min-width: 550px) and (max-width: 699px) {
   #hero .hero-img {
     margin-bottom: -25%;
-  }
-  #info .infoImg-right {
-    margin-top: 10rem;
   }
 }
 

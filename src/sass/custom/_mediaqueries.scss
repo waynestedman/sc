@@ -32,20 +32,23 @@
     } // heroBox
   } // hero
   #info {
-    margin-bottom: -8rem;
-    z-index: 100;
-
     .infoImg-left {
       width: 20%;
+      float: left;
+      z-index: 4;
       // margin-top: -2rem;
     }
     .info-text {
-      top: 12%;
-      left: 3rem;
-      width: 88%;
+      position: relative;
+      top: unset;
+      left: unset;
+      text-align: center;
+      margin: 6rem auto 0 auto;
+      width: 60%;
       padding: 0;
 
       h2 {
+        margin-top: 0;
         font-size: 4rem;
       }
       h6 {
@@ -55,7 +58,8 @@
     .infoImg-right {
       float: right;
       width: 50%;
-      margin-top: 22rem;
+      margin-top: -20rem;
+      max-height: 380px;
     }
   } // info
   #products {
@@ -66,8 +70,8 @@
       margin: 0 auto 4rem auto;
 
       .product-img {
-        // margin-top: 0;
-        z-index: 5;
+        margin-top: 0;
+        // z-index: 50;
       }
     } // product
   } // products
@@ -94,8 +98,12 @@
       }
     } // hero
     #info {
+      .info-text {
+        // background-color: unset;
+        // border-radius: unset;
+      }
       .infoImg-right {
-        margin-top: 10rem;
+        // margin-top: 10rem;
       }
     } // info
 } // min 550 to max 699 - Bigger mobile exceptions
