@@ -386,8 +386,10 @@ body {
     width: 20%;
   }
   #info .info-text {
-    width: 100%;
-    padding: 0 10%;
+    top: 12%;
+    left: 3rem;
+    width: 88%;
+    padding: 0;
   }
   #info .info-text h2 {
     font-size: 4rem;
@@ -397,8 +399,8 @@ body {
   }
   #info .infoImg-right {
     float: right;
-    width: 40%;
-    margin-top: 20rem;
+    width: 50%;
+    margin-top: 22rem;
   }
   #products {
     flex-direction: column;
@@ -408,7 +410,6 @@ body {
     margin: 0 auto 4rem auto;
   }
   #products .product .product-img {
-    margin-top: 0;
     z-index: 5;
   }
   #regimen h2 {
