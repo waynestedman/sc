@@ -1,6 +1,103 @@
 @media only screen and (max-width: 699px) {
+  #hero {
+    background-color: $scTan-lt;
 
+    .hero-img {
+      // max-height: 50%;
+      margin-bottom: -70%;
+    }
+    .heroBox {
+      position: relative;
+      top: unset;
+      left: unset;
+      width: 100%;
+      padding: 0 4% 4rem 4%;
+      text-align: center;
+      margin: 0 auto;
+
+      .heroBox-new {
+        display: none;
+      } // heroBox-new
+      h1 {
+        font-size: 4.4rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      h6 {
+        font-size: 1.8rem;
+        padding-right: 0;
+      }
+    } // heroBox
+  } // hero
+  #info {
+    margin-bottom: -8rem;
+    z-index: 100;
+
+    .infoImg-left {
+      width: 20%;
+      // margin-top: -2rem;
+    }
+    .info-text {
+      width: 100%;
+      padding: 0 10%;
+
+      h2 {
+        font-size: 4rem;
+      }
+      h6 {
+        font-size: 1.8rem;
+      }
+    }
+    .infoImg-right {
+      float: right;
+      width: 40%;
+      margin-top: 20rem;
+    }
+  } // info
+  #products {
+    flex-direction: column;
+
+    .product {
+      width: 90%;
+      margin: 0 auto 4rem auto;
+
+      .product-img {
+        margin-top: 0;
+        z-index: 5;
+      }
+    } // product
+  } // products
+  #regimen {
+    h2 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .regimen-wrapper {
+      flex-direction: column;
+
+      .regimen {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+      } // regimen
+    } // regimen-wrapper
+  } // regimen
 } // Mobile - everything smaller than 700
+@media only screen and (min-width: 550px) and (max-width: 699px) {
+    #hero {
+      .hero-img {
+        margin-bottom: -25%;
+      }
+    } // hero
+    #info {
+      .infoImg-right {
+        margin-top: 10rem;
+      }
+    } // info
+} // min 550 to max 699 - Bigger mobile exceptions
+
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
 
 } // min 700 to max 1024 - Tablet

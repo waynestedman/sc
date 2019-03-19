@@ -1,6 +1,7 @@
 // SC Colors:
 // main blue = $blue700
 $scTan: #fbecd9;
+$scTan-lt: #f1efe8;
 
 .content-wrapper {
   @keyframes fadeEffect {
@@ -91,7 +92,7 @@ $scTan: #fbecd9;
     width: 75%;
     float: right;
     margin-top: -0.4rem;
-    z-index: 1;
+    // z-index: 1;
   }
 } // info
 #products {
