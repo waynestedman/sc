@@ -143,15 +143,22 @@
   } //hero
   #info {
     .info-text {
-      padding-left: 18%;
-      padding-right: 18%;
+      padding-left: 20%;
+      padding-right: 20%;
+
+      h2 {
+        margin-top: 0;
+      }
     }
     .infoImg-right {
       width: 80%;
-      margin-top: -18rem;
+      margin-top: 9rem;
+      margin-right: -6rem;
     }
   } // info
   #products {
+    margin-top: -2rem;
+
     .product {
       .product-img {
         margin-top: 0;
@@ -170,3 +177,14 @@
     } // regimen-wrapper
   } // regimen
 } // min 700 to max 1024 - Tablet
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  #hero {
+    .heroBox {
+      top: 3%;
+
+      h6 {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+} // min 900 to max 1024 - Tablet landscape exceptions
