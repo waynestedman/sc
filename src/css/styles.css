@@ -437,8 +437,8 @@ body {
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   .content-wrapper .button-cta {
-    font-size: 1.8rem;
-    padding: .8rem 2.4rem;
+    font-size: 1.6rem;
+    padding: .6rem 2rem;
   }
   #hero {
     padding-bottom: 4.4rem;
@@ -455,14 +455,15 @@ body {
     margin-bottom: .6rem;
   }
   #hero .heroBox h3 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
   #hero .heroBox h6 {
     font-size: 1.8rem;
+    line-height: 1.2;
     padding-right: 0;
     margin-top: 1.2rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.4rem;
   }
   #info .info-text {
     padding-left: 20%;
@@ -491,11 +492,30 @@ body {
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .content-wrapper .button-cta {
+    font-size: 1.8rem;
+    padding: .8rem 2rem;
+  }
   #hero .heroBox {
     top: 3%;
   }
+  #hero .heroBox h1 {
+    margin-bottom: 1rem;
+  }
+  #hero .heroBox h3 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
   #hero .heroBox h6 {
     margin-bottom: 4rem;
+    line-height: 1.4;
+    font-size: 2rem;
+  }
+  #info .infoImg-left {
+    margin-top: -8rem;
+  }
+  #info .infoImg-right {
+    margin-top: 2rem;
   }
 }
 
