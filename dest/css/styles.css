@@ -417,9 +417,10 @@ body {
     padding-right: 0;
   }
   #info .infoImg-left {
-    width: 20%;
+    width: 15%;
     float: left;
     z-index: 4;
+    margin-top: -3rem;
   }
   #info .info-text {
     position: relative;
@@ -427,7 +428,7 @@ body {
     left: unset;
     text-align: center;
     margin: 6rem auto 0 auto;
-    width: 60%;
+    width: 70%;
     padding: 0;
   }
   #info .info-text h2 {
