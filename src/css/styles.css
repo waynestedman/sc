@@ -289,7 +289,7 @@ body {
   display: inline-block;
   width: 75%;
   float: right;
-  margin-top: -0.4rem;
+  margin-top: 0;
 }
 
 #products {

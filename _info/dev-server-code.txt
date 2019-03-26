@@ -1,44 +1,3 @@
-<script type="text/javascript" xml="space">// <![CDATA[
-require([
-  'jquery',
-  'slick'
-  ], function ($) {
-$(document).ready(function(){
-  $('#testimonialsSlider').slick({
-    dots: false,
-    focusOnChange: true,
-    speed: 1200,
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    swipe: true,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true
-        }
-      }
-    ]
-  }); // testimonials slider
-  $('#usesSlider-imgs').slick({
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows: false,
-   asNavFor: '#usesSlider-text'
-  });
-  $('#usesSlider-text').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '#usesSlider-imgs',
-    dots: true,
-    focusOnSelect: true
-  });
-});
-});
-// ]]></script>
 <style xml="space"><!--
 .cms-page-view .column.main img {
   margin: 0 auto;
@@ -109,28 +68,28 @@ $(document).ready(function(){
 }
 
 .content-wrapper h1 {
-  font-size: 60px;
+  font-size: 6rem;
   line-height: 1.3;
 }
 
 .content-wrapper h2 {
-  font-size: 50px;
+  font-size: 5rem;
   line-height: 1.3;
 }
 
 .content-wrapper h3 {
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 1.3;
 }
 
 .content-wrapper h4 {
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 1.4;
   font-weight: 300;
 }
 
 .content-wrapper h5 {
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 1.4;
   font-weight: 300;
   margin-top: 2.6rem;
@@ -138,13 +97,13 @@ $(document).ready(function(){
 }
 
 .content-wrapper h6 {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.4;
   font-weight: 300;
 }
 
 .content-wrapper p {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 
@@ -160,20 +119,20 @@ $(document).ready(function(){
   cursor: pointer;
   background: none;
   border: 1px solid #424649;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .content-wrapper li {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .content-wrapper .cta {
   font-weight: 400;
   cursor: pointer;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .content-wrapper .cta:hover {
@@ -181,7 +140,7 @@ $(document).ready(function(){
 }
 
 .content-wrapper .slick-list {
-  margin-left: -18px;
+  margin-left: -1.8rem;
 }
 
 .content-wrapper .slick-prev, .content-wrapper .slick-next {
@@ -219,28 +178,19 @@ $(document).ready(function(){
   }
 }
 
-.content-wrapper h2 {
-  font-size: 2rem;
-}
-
 .content-wrapper h3 {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 3.5rem;
 }
 
 .content-wrapper h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 1rem 0;
-}
-
-.content-wrapper h5 {
-  font-size: 1.6rem;
-  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .content-wrapper .button-cta {
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: 400;
   background-color: #004098;
   color: #fff;
   text-transform: uppercase;
@@ -250,10 +200,6 @@ $(document).ready(function(){
 
 .content-wrapper .button-cta:hover {
   background-color: #B1C9E8;
-}
-
-.content-wrapper blockquote {
-  font-size: 2rem;
 }
 
 .content-wrapper .clearfix {
@@ -278,87 +224,73 @@ $(document).ready(function(){
 
 #hero .hero-img {
   width: 100%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
 }
 
 #hero .heroBox {
   position: absolute;
-  top: 12%;
+  top: 4%;
   left: 0;
-  width: 50%;
-  padding: 40px;
+  width: 48%;
+  padding-left: 6%;
   text-align: left;
 }
 
-#hero .heroBox .heroBox-title {
-  margin-top: 4rem;
-  margin-left: -8rem;
+#hero .heroBox .heroBox-new {
+  width: 40%;
+  margin-left: -2.8rem;
 }
 
-#hero .heroBox h2 {
+#hero .heroBox h1 {
   margin-top: 0;
-  font-weight: 400;
-  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
-#hero .heroBox p {
-  padding-right: 10%;
+#hero .heroBox h3 {
+  margin-bottom: 2rem;
+}
+
+#hero .heroBox h6 {
+  padding-right: 12rem;
   margin-bottom: 4rem;
-}
-
-#hero .heroBox .badge {
-  margin: -2rem 1rem 0 0;
-  float: right;
-  width: 104px;
-}
-
-#testimonials {
-  background-color: #F5F9FC;
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/ovo/white-icon.svg");
-  background-repeat: repeat;
-  background-size: 48px;
-  padding: 3rem 0;
-  margin-bottom: 4rem;
-}
-
-#testimonialsSlider {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#testimonialsSlider .slick-prev {
-  left: -10px;
-}
-
-#testimonialsSlider .slick-next {
-  right: -10px;
-}
-
-#testimonialsSlider .testimonial {
-  display: inline;
-  padding: 20px 60px;
-}
-
-#testimonialsSlider .testimonial h3 {
-  font-size: 2.3rem;
-  color: #004098;
-}
-
-#testimonialsSlider .testimonial img {
-  width: 150px;
-  margin: 0 auto 20px auto;
-}
-
-#testimonialsSlider .testimonial blockquote {
-  font-size: 1.7rem;
-  margin: 0;
-  text-align: center;
 }
 
 #info {
   position: relative;
   text-align: left;
+  display: inline-block;
+}
+
+#info .infoImg-left {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  margin-top: -6rem;
+}
+
+#info .info-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 26%;
+  text-align: center;
+}
+
+#info .infoImg-right {
+  display: inline-block;
+  width: 75%;
+  float: right;
+  margin-top: -0.4rem;
+}
+
+#products {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(80%, #fbecd9));
+  background: -o-linear-gradient(#ffffff 0%, #fbecd9 80%);
+  background: linear-gradient(#ffffff 0%, #fbecd9 80%);
+  padding-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,534 +298,348 @@ $(document).ready(function(){
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
-#info .infoTitle {
-  width: 50%;
-  margin-left: 32%;
-  z-index: 100;
-}
-
-#info .infoImg {
-  margin-top: -8rem;
-  display: inline-block;
-  width: 50%;
-  z-index: 1;
-}
-
-#info .infoIntro {
-  position: absolute;
-  top: 100px;
-  right: 10rem;
+#products .product {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 40%;
 }
 
-#info .infoList {
-  position: absolute;
-  top: 300px;
-  right: 8rem;
-  width: 45%;
+#products .product .product-img {
+  margin-top: -10rem;
 }
 
-#info .infoList ul {
-  list-style-type: none;
+#products .product p {
+  margin-bottom: 2rem;
 }
 
-#info .infoList li {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/ovo/bullet.svg");
-  background-size: 20px;
-  background-position: 0 6px;
-  background-repeat: no-repeat;
-  padding-left: 40px;
+#regimen {
+  text-align: center;
 }
 
-#howMade {
-  position: relative;
-  margin: 6rem 0;
+#regimen h2 {
+  width: 100%;
 }
 
-#howMade .howMade-img {
-  position: relative;
-  padding-top: 4rem;
+#regimen .regimen-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-#howMade .howMade-txt {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 4%;
+#regimen .regimen-wrapper .regimen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 30%;
 }
 
-#howMade .howMade-txt .howMade-title {
-  width: 46%;
+#regimen .regimen-wrapper .regimen img {
+  max-width: 295px;
 }
 
-#howMade .howMade-txt a {
-  font-weight: 600;
+#regimen .regimen-wrapper .regimen span {
+  font-weight: 400;
 }
 
-#uses {
-  margin-bottom: 6rem;
-  position: relative;
+#scm-banner {
+  width: 100%;
 }
 
-#uses .uses-title {
-  background-color: #FFFFFF;
-  float: left;
-  width: 40%;
-  display: inline-block;
-}
-
-#uses .uses-title img {
-  max-height: 92px;
-}
-
-#uses .usesIntro {
-  display: inline-block;
-  width: 60%;
-  font-weight: 300;
-  padding-left: 6%;
-  padding-bottom: 2%;
-}
-
-#uses .usesIntro h3 {
-  font-weight: 300;
-}
-
-#uses #usesSlider-imgs {
-  width: 52%;
-  float: right;
-}
-
-#uses #usesSlider-imgs .use-img {
-  max-width: 800px;
-  overflow: hidden;
-}
-
-#uses #usesSlider-imgs .use-img img {
-  margin: 0;
-}
-
-#uses #usesSlider-text {
-  background-color: #DCE6F2;
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/ovo/blue-icon.svg");
-  background-position: 2% -0.5%;
-  background-repeat: repeat;
-  background-size: 48px;
-  width: 47%;
-  max-height: 502px;
-  padding: 6% 0 6% 8%;
-}
-
-#uses #usesSlider-text .use-text {
-  width: 52%;
-  background-color: #FFFFFF;
-  padding: 4rem 2rem 10rem 4rem;
-  min-height: 336px;
-}
-
-#uses #usesSlider-text .slick-arrow {
-  margin-top: 140px;
-}
-
-#uses #usesSlider-text .slick-prev {
-  left: 88px;
-}
-
-#uses #usesSlider-text .slick-dots {
-  bottom: 84px;
-  width: 80%;
-  margin-left: -7px;
-}
-
-#uses #usesSlider-text .slick-dots li button:before {
-  font-size: 4rem;
-  color: #004098;
-}
-
-#closing {
-  position: relative;
-  background-color: #ffffff;
-  text-align: left;
-  height: 100%;
-}
-
-#closing .closing-img {
-  width: 50%;
-  float: left;
-}
-
-#closing .closingBox {
-  width: 50%;
-  float: right;
-}
-
-#closing .closingBox .closingBox-title {
-  width: 50%;
-}
-
-#closing .closingBox p {
-  max-width: 450px;
-  margin: 40px 0;
-}
-
-#closing .closingBox .button-cta {
-  padding-left: 12%;
-  padding-right: 12%;
-}
-
-@media only screen and (max-width: 799px) {
-  .content-wrapper .slick-list {
-    margin-left: 0;
+@media only screen and (max-width: 699px) {
+  #hero {
+    background-color: #f1efe8;
   }
   #hero .hero-img {
-    margin-bottom: 0;
+    margin-bottom: -70%;
   }
   #hero .heroBox {
-    top: 34%;
+    position: relative;
+    top: unset;
+    left: unset;
     width: 100%;
-    padding: 0 0 0 4%;
+    padding: 0 4% 4rem 4%;
+    text-align: center;
+    margin: 0 auto;
   }
-  #hero .heroBox .heroBox-title {
-    margin: 0 0 0 -14%;
-    width: 120%;
+  #hero .heroBox .heroBox-new {
+    display: none;
   }
-  #hero .heroBox h2 {
-    margin-top: -1rem;
-    margin-bottom: 1.6rem;
+  #hero .heroBox h1 {
+    font-size: 4.4rem;
   }
-  #hero .heroBox p {
-    margin-bottom: 1.6rem;
+  #hero .heroBox h3 {
+    font-size: 2rem;
+    font-weight: 400;
   }
-  #hero .heroBox .badge {
-    position: absolute;
-    top: -8rem;
-    left: 2rem;
+  #hero .heroBox h6 {
+    font-size: 1.8rem;
+    padding-right: 0;
   }
-  #info {
+  #info .infoImg-left {
+    width: 15%;
+    float: left;
+    z-index: 4;
+    margin-top: -3rem;
+  }
+  #info .info-text {
+    position: relative;
+    top: unset;
+    left: unset;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    width: 70%;
+    padding: 0;
+  }
+  #info .info-text h2 {
+    margin-top: 0;
+    font-size: 4rem;
+  }
+  #info .info-text h6 {
+    font-size: 1.8rem;
+  }
+  #info .infoImg-right {
+    float: right;
+    width: 50%;
+    margin-top: -20rem;
+    max-height: 380px;
+  }
+  #products {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  #info .infoImg {
-    display: block;
-    width: 100%;
-    margin-top: 0;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-  #info .infoTitle {
-    width: 100%;
-    margin: 0 auto;
-  }
-  #info .infoIntro {
-    position: relative;
-    top: unset;
-    right: unset;
-    margin-left: initial;
-    margin-bottom: 2rem;
-    padding: 0 4%;
-    width: 100%;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-  #info .infoList {
-    position: relative;
-    top: unset;
-    right: unset;
-    margin-left: initial;
-    margin-top: 0;
-    padding: 0;
-    width: 100%;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-  }
-  #howMade .howMade-img {
-    padding-top: 8rem;
-  }
-  #howMade .howMade-txt .howMade-title {
-    width: 100%;
-    margin-left: -2%;
-  }
-  #uses {
-    margin-bottom: 0;
-  }
-  #uses .uses-title {
-    width: 100%;
-  }
-  #uses .usesIntro {
-    width: 96%;
-  }
-  #uses #usesSlider-imgs {
-    width: 100%;
-    float: none;
-  }
-  #uses #usesSlider-text {
-    width: 100%;
-    padding: 0 0 4rem 0;
-  }
-  #uses #usesSlider-text .use-text {
-    width: 100%;
-    padding-bottom: 0;
-    padding-right: 2%;
-  }
-  #uses #usesSlider-text .slick-arrow {
-    margin-top: 104px;
-  }
-  #uses #usesSlider-text .slick-prev {
-    left: 0;
-  }
-  #uses #usesSlider-text .slick-dots {
-    bottom: 60px;
-    margin-left: 42px;
-  }
-  #closing .closing-img {
-    width: 100%;
-  }
-  #closing .closingBox {
+  #products .product {
     width: 90%;
-    float: none;
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
   }
-  #closing .closingBox .closingBox-title {
-    width: 100%;
+  #products .product .product-img {
+    margin-top: 0;
   }
-  #closing .closingBox p {
-    max-width: none;
-    margin: 3rem auto;
-    padding: 0;
+  #regimen h2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 799px) {
-  #hero .heroBox .heroBox-title {
-    margin-top: 8rem;
+  #regimen .regimen-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
-  #hero .heroBox h2 {
-    line-height: 1.5;
-  }
-  #hero .heroBox p {
-    line-height: 1.5;
-  }
-  #hero .heroBox .badge {
-    position: relative;
-    margin: 4rem 8rem 0 0;
-    width: 120px;
+  #regimen .regimen-wrapper .regimen {
+    width: 90%;
+    margin: 0 auto 3rem auto;
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
-  #hero .heroBox .heroBox-title {
-    margin-top: 1rem;
+@media only screen and (min-width: 550px) and (max-width: 699px) {
+  #hero .hero-img {
+    margin-bottom: -25%;
   }
-  #hero .heroBox p {
-    margin-bottom: 2rem !important;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .content-wrapper .button-cta {
+    font-size: 1.6rem;
+    padding: .6rem 2rem;
   }
-  #uses #usesSlider-text {
-    padding-top: 2.6rem;
-    padding-bottom: 1.4rem;
+  #hero {
+    padding-bottom: 4.4rem;
+  }
+  #hero .heroBox {
+    top: 1%;
+    padding-left: 3%;
+  }
+  #hero .heroBox .heroBox-new {
+    margin-left: 0;
+  }
+  #hero .heroBox h1 {
+    font-size: 4.6rem;
+    margin-bottom: .6rem;
+  }
+  #hero .heroBox h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  #hero .heroBox h6 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-right: 0;
+    margin-top: 1.2rem;
+    margin-bottom: 1.4rem;
+  }
+  #info .info-text {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #info .info-text h2 {
+    margin-top: 0;
+  }
+  #info .infoImg-right {
+    width: 80%;
+    margin-top: 9rem;
+    margin-right: -6rem;
+  }
+  #products {
+    margin-top: -2rem;
+  }
+  #products .product .product-img {
+    margin-top: 0;
+  }
+  #regimen .regimen-wrapper {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  #regimen .regimen-wrapper .regimen img {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .content-wrapper .button-cta {
+    font-size: 1.8rem;
+    padding: .8rem 2rem;
+  }
+  #hero .heroBox {
+    top: 3%;
+  }
+  #hero .heroBox h1 {
+    margin-bottom: 1rem;
+  }
+  #hero .heroBox h3 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  #hero .heroBox h6 {
+    margin-bottom: 4rem;
+    line-height: 1.4;
+    font-size: 2rem;
+  }
+  #info .infoImg-left {
+    margin-top: -8rem;
+  }
+  #info .infoImg-right {
+    margin-top: 2rem;
   }
 }
 --></style>
-<div class="content-wrapper">
-  <section id="hero">
-    <div class="hero-img">
-      <picture>
-        <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/hero-m.jpg" media="(max-width: 499px)" />
-        <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/hero-m-bigger.jpg" media="(max-width: 699px)" />
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/hero.jpg" alt="DHC olive virgin oil">
-      </picture>
-    </div>
-    <div class="heroBox">
-      <div class="heroBox-title">
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/olive-virgin-oil.png" alt="olive virgin oil script">
-      </div>
-      <h2>The Ultimate Facial Oil</h2>
-      <p>There’s a reason facial oils are getting all the love right now. They offer an intensive boost of moisture to all skin types — yes, even oily skin — while nourishing your complexion from within.</p>
-      <p style="margin-bottom: 6rem;">Olive Virgin Oil is a botanical face oil that hydrates and nourishes with 100% organic olive oil. This pure, lightweight oil melts into your skin to impart an effortless glow.</p>
-      <img class="badge" src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/badge.svg" alt="4.9 star rating out of 393 reviews">
-      <p><a href="https://www.dhccare.com/olive-virgin-oil.html" class="button-cta">buy now</a></p>
-    </div>
-  </section> <!-- hero -->
-  <section id="testimonials">
-    <div id="testimonialsSlider">
-      <div class="testimonial one">
-        <h3>This is my new favorite skincare product.</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>After application, my skin glows. I love this product so much.</p>
-        <blockquote>murphette,<br>Georgia</blockquote>
-      </div>
-      <div class="testimonial two">
-        <h3>Love it!</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>I have very dry skin and applying a small amount after my moisturizer has helped keep my skin more moist.</p>
-        <blockquote>Kelly50,<br>Texas</blockquote>
-      </div>
-      <div class="testimonial three">
-        <h3>I was very surprised at how much I liked it.</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>Absorbs and plumps up my skin. Lasts all day. Smells fresh and clean.</p>
-        <blockquote>Joannexmas,<br>New Jersey</blockquote>
-      </div>
-      <div class="testimonial four">
-        <h3>Favorite Face Oil!</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>My incredibly dry and sensitive skin loves this oil. This has been a great find.</p>
-        <blockquote>Erin Z,<br>California</blockquote>
-      </div>
-      <div class="testimonial five">
-        <h3>Excellent product</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>I can't be without this oil, it's absolutely the best for my skin, been using it for years.</p>
-        <blockquote>Pam.k,<br>West Yorkshire, UK</blockquote>
-      </div>
-      <div class="testimonial six">
-        <h3>Lovely product</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>This feels so hydrating and good for your skin. I can still feel the moisture in the A.M.</p>
-        <blockquote>Calgirl,<br>California</blockquote>
-      </div>
-      <div class="testimonial seven">
-        <h3>Great stuff</h3>
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/stars.svg" alt="5 star rating">
-        <p>I suggested my husband try it, his skin looks healthy.</p>
-        <blockquote>Sandy1962,<br>New Jersey</blockquote>
-      </div>
-    </div>  <!-- testimonials Slider -->
-  </section>
-  <section id="info">
-    <div class="infoTitle">
-      <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/perfect-ingredient.jpg" alt="One perfect ingredient">
-    </div>
-    <div class="infoImg">
-      <picture>
-        <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/ingredient-m.jpg" media="(max-width: 699px)" />
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/ingredient.jpg" alt="virgin olive oil the perfect ingredient">
-      </picture>
-    </div>
-    <div class="infoIntro">
-      <p>Olive Virgin Oil is a facial moisturizer with just one ingredient: first-crush organic olive oil, harvested in Spain and ultra-purified in Japan.<br>
-      <br>
-      Lightweight texture absorbs instantly to deliver deep, long-lasting moisture. Pure olive oil protects skin with botanical antioxidants without clogging pores.</p>
-    </div> <!-- infoIntro -->
-    <div class="infoList">
-      <ul>
-        <li>
-          <div class="listItem">
-            <p>Nourishing</p>
-            <h5>Rich in protective squalane and vitamins A, D, E and K. Abundant in omega-6 and omega-3 fatty acids as well as polyphenols that help fight oxidative damage that shows up as aging, tired-looking skin.</h5>
-          </div>
-        </li>
-        <li>
-          <div class="listItem">
-            <p>Antioxidant</p>
-            <h5>Helps fight signs of aging by preventing damage caused by free radicals and environmental impurities.</h5>
-          </div>
-        </li>
-        <li>
-          <div class="listItem">
-            <p>Moisturizing</p>
-            <h5>Oleic acid, a key component of olive oil, mimics the skin’s natural oil to soften and promote elasticity.</h5>
-          </div>
-        </li>
-        <li>
-          <div class="listItem">
-            <p>Non-Comedogenic</p>
-            <h5>Lightweight, pure oil doesn’t clog pores.</h5>
-          </div>
-        </li>
-      </ul>
-    </div> <!-- infoList -->
-  </section> <!-- info -->
-  <section id="howMade">
-    <div class="howMade-img">
-      <picture>
-        <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/harvest-m.jpg" media="(max-width: 699px)" />
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/harvest.jpg" alt="landscape showing an olive harvest">
-      </picture>
-    </div>
-    <div class="howMade-txt">
-      <div class="howMade-title">
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/organic-harvest.jpg" alt="organic harvest">
-      </div>
-      <p>Discover how ripe, fresh organic olives are transformed into your favorite facial moisturizer.</p>
-      <p><a href="https://www.dhccare.com/blog/olive-virgin-oil-history/">Learn More &gt;</a></p>
-    </div>
-
-  </section> <!-- howMade -->
-  <section id="uses">
-    <div class="uses-title">
-      <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/so-many-uses.jpg" alt="so many uses">
-    </div>
-    <div class="usesIntro">
-      <h3>This luxe, natural facial oil is surprisingly versatile. Explore the many ways you can use Olive Virgin Oil!</h3>
-    </div>
-    <div id="usesSlider-imgs">
-      <div class="use-img">
+  <div class="content-wrapper">
+    <section id="hero">
+      <div class="hero-img">
         <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/more-moisture-m.jpg" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/more-moisture.jpg" alt="More moisture">
+          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero-m.jpg" media="(max-width: 549px)" />
+          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero-bigger-m.jpg" media="(max-width: 699px)" />
+          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero.jpg" alt="DHC Super Collagen Products">
         </picture>
       </div>
-      <div class="use-img">
+      <div class="heroBox">
+        <div class="heroBox-new">
+          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/hero-starred.png" alt="New Super Collagen Products">
+        </div>
+        <h1>Super Collagen Innovations</h1>
+        <h3>Brightness. Hydration. Radiance.</h3>
+        <h6>Our patented Dipeptide-8 complex delivers our highest concentration of micronized collagen to your skin’s top layer. These high-potency formulations revitalize skin with radiant results.</h6>
+        <p><a href="https://www.dhccare.com/shop.html" class="button-cta">shop now</a></p>
+      </div>
+    </section> <!-- hero -->
+    <section id="info">
+      <div class="infoImg-left">
         <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/eye-care-m.jpg" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/eye-care.jpg" alt="Simply soft">
+          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-beaker-m.png" media="(max-width: 699px)" />
+          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-flask.png" alt="flask">
         </picture>
       </div>
-      <div class="use-img">
+      <div class="info-text">
+        <h2>Dipeptide-8</h2>
+        <h6>Developed and patented in Japan, Dipeptide-8 is a smaller skin-firming collagen molecule that instantly absorbs to maximize hydration, promote elasticity and protect from free-radical damage. You’ll see a smoother and brighter-looking complexion.</h6>
+      </div>
+      <div class="infoImg-right">
         <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/treat-hair-m.jpg" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/treat-hair.jpg" alt="Treat your hair">
+          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-molecule-m.png" media="(max-width: 699px)" />
+          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-dropper-beaker.jpg" alt="super collagen molecule graphic, dropper, beaker">
         </picture>
       </div>
-      <div class="use-img">
+    </section> <!-- info -->
+    <section id="products">
+      <div class="product">
+        <div class="product-img">
+          <picture>
+            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/product-super-collagen-supreme.png" alt="DHC Super Collagen Products">
+          </picture>
+        </div>
+        <h4>Super Collagen Supreme</h4>
+        <p>An ultra-hydrating collagen elixir designed to combine oil’s nourishing and moisturizing qualities with serum’s easy absorption and targeted ingredients.<br>$28</p>
+        <p><a href="https://www.dhccare.com/super-collagen-supreme.html" class="button-cta">shop now</a></p>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <picture>
+            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/product-super-collagen-cream.png" alt="DHC Super Collagen Products">
+          </picture>
+        </div>
+        <h4>Super Collagen Cream</h4>
+        <p>Powerful, concentrated Dipeptide-8 collagen peptides meet a nourishing complex of moisturizing and brightening botanicals in this midweight cream for all skin types.<br>$50</p>
+        <p><a href="https://www.dhccare.com/super-collagen-cream.html" class="button-cta">shop now</a></p>
+      </div>
+    </section> <!-- products -->
+    <section id="regimen">
+      <h2>Experience the Regimen</h2>
+      <div class="regimen-wrapper">
+        <div class="regimen">
+          <picture>
+            <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-cleanse-m.jpg" media="(max-width: 699px)" />
+            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-cleanse.jpg" alt="">
+          </picture>
+          <h4>Cleanse</h4>
+          <p>Remove makeup and eliminate impurities.</p>
+        </div>
+        <div class="regimen">
+          <picture>
+            <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-enhance-m.jpg" media="(max-width: 699px)" />
+            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-enhance.jpg" alt="">
+          </picture>
+          <h4>Enhance</h4>
+          <p>Lock in softness with <span>Super Collagen Supreme</span>’s innovative, weightless oil-serum.</p>
+        </div>
+        <div class="regimen">
+          <picture>
+            <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-moisturize-m.jpg" media="(max-width: 699px)" />
+            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-moisturize.jpg" alt="">
+          </picture>
+          <h4>Moisturize</h4>
+          <p>Protect and brighten with <span>Super Collagen Cream</span>’s rich, botanical formula.</p>
+        </div>
+      </div>
+    </section> <!-- regimen -->
+    <section id="scm-banner">
+      <a href="https://www.dhccare.com/info-super-collagen-mist">
         <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/nurture-nails-m.jpg" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/nurture-nails.jpg" alt="Nurture your nails">
+          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/scm-banner-m.png" media="(max-width: 699px)" />
+          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/scm-banner.png" alt="Top Seller! Super Collagen Mist. Learn more.">
         </picture>
-      </div>
-    </div> <!-- usesSlider-imgs -->
-    <div id="usesSlider-text">
-      <div class="use-text">
-        <h3>More Moisture</h3>
-        <p>Mix a few drops into your favorite moisturizer or layer it over a serum. Olive Virgin Oil’s lightweight texture never clogs pores or feels heavy.</p>
-      </div>
-      <div class="use-text">
-        <h3>Simply Soft</h3>
-        <p>Toner + Olive Virgin Oil: two simple steps add up to double the softness. Place toning lotion in your hands and pat it all over your face. While your face is still damp, rub Olive Virgin Oil in your hands to warm, then pat it into your skin.</p>
-      </div>
-      <div class="use-text">
-        <h3>Treat Your Hair</h3>
-        <p>Rub a few drops of Olive Virgin Oil in your hands to warm it, and smooth it on flyaway strands and dry ends.</p>
-      </div>
-      <div class="use-text">
-        <h3>Nuture Your Nails</h3>
-        <p>Massage a few drops of Olive Virgin Oil into your cuticles to hydrate the skin around your nails and protect them.</p>
-      </div>
-    </div> <!-- usesSlider-text -->
-
-  </section> <!-- uses slider -->
-  <section id="closing">
-    <div class="closing-img">
-      <picture>
-        <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/products-m.jpg" media="(max-width: 699px)" />
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/products.jpg" alt="DHC Deep Cleansing Oil, Olive Virgin Oil, Mild Soap, and natural Mild Lotion">
-      </picture>
-    </div>
-    <div class="closingBox">
-      <div class="closingBox-title">
-        <img src="https://www.dhccare.com/media/wysiwyg/dev_test/ovo/olive-oil-regimen.jpg" alt="olive oil regimen">
-      </div>
-      <p>Make Olive Virgin Oil part of a complete Japanese skincare regimen powered by complexion-boosting olive oil and see smoother, brighter skin.</p>
-      <p><a class="button-cta" href="https://www.dhccare.com/shop/skincare/olive-originals.html">Shop the collection</a></p>
-    </div>
-    <div class="clearfix"></div>
-  </section> <!-- closing -->
-</div>
+      </a>
+    </section> <!-- scm-banner -->
+  </div> <!-- content wrapper -->

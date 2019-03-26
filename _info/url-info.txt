@@ -1,15 +1,9 @@
 https://www.dhccare.com
-/media/wysiwyg/content/product/ovo
+/media/wysiwyg/content/product/sc
 
 
 *************** Dev Ver ***************
-https://www.dhccare.com/media/wysiwyg/dev_test/ovo
+https://www.dhccare.com/media/wysiwyg/dev_test/sc
 
 
-
-the URL key for the OVO custom page will be olive-virgin-oil-for-face
-
-
-blog:
-olive-virgin-oil-history
-UK: history-olive-virgin-oil
+https://dhc-magento.idevdesign.net/sc
