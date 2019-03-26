@@ -1,9 +1,596 @@
-<script type="text/javascript" xml="space">// <![CDATA[
-
-]]></script>
 <style xml="space"><!--
+.cms-page-view .column.main img {
+  margin: 0 auto;
+}
 
+.columns .column.main {
+  padding-bottom: 0;
+}
+
+.modal-popup .modal-footer {
+  display: none;
+}
+
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #FFFFFF;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
+}
+
+.content-wrapper h1 {
+  font-size: 6rem;
+  line-height: 1.3;
+}
+
+.content-wrapper h2 {
+  font-size: 5rem;
+  line-height: 1.3;
+}
+
+.content-wrapper h3 {
+  font-size: 3.5rem;
+  line-height: 1.3;
+}
+
+.content-wrapper h4 {
+  font-size: 4rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.content-wrapper p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #424649;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  color: #424649;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #424649;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.content-wrapper li {
+  font-size: 1.6rem;
+}
+
+.content-wrapper .cta {
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.content-wrapper .cta:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper .slick-list {
+  margin-left: -1.8rem;
+}
+
+.content-wrapper .slick-prev, .content-wrapper .slick-next {
+  font-size: 0;
+}
+
+.content-wrapper .slick-prev:before, .content-wrapper .slick-next:before {
+  color: none;
+}
+
+.content-wrapper .slick-arrow {
+  border: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content-wrapper h3 {
+  font-size: 3.5rem;
+}
+
+.content-wrapper h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.content-wrapper .button-cta {
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #004098;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border: 1px solid #004098;
+}
+
+.content-wrapper .button-cta:hover {
+  background-color: #B1C9E8;
+}
+
+.content-wrapper .clearfix {
+  display: block;
+}
+
+.content-wrapper .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .content-wrapper .clearfix {
+  height: 1px;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero .hero-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#hero .heroBox {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 48%;
+  padding-left: 6%;
+  text-align: left;
+}
+
+#hero .heroBox .heroBox-new {
+  width: 24%;
+  margin-left: -1.3rem;
+}
+
+#hero .heroBox h1 {
+  margin-top: 0;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+#hero .heroBox h3 {
+  margin-bottom: 2rem;
+}
+
+#hero .heroBox h6 {
+  padding-right: 12rem;
+  margin-bottom: 4rem;
+}
+
+#info {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+}
+
+#info .infoImg-left {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  margin-top: -6rem;
+}
+
+#info .info-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 26%;
+  text-align: center;
+}
+
+#info .infoImg-right {
+  display: inline-block;
+  width: 75%;
+  float: right;
+  margin-top: 0;
+}
+
+#products {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(80%, #fbecd9));
+  background: -o-linear-gradient(#ffffff 0%, #fbecd9 80%);
+  background: linear-gradient(#ffffff 0%, #fbecd9 80%);
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+#products .product {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 40%;
+}
+
+#products .product .product-img {
+  margin-top: -10rem;
+}
+
+#products .product p {
+  margin-bottom: 2rem;
+}
+
+#regimen {
+  text-align: center;
+}
+
+#regimen h2 {
+  width: 100%;
+}
+
+#regimen .regimen-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#regimen .regimen-wrapper .regimen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 30%;
+}
+
+#regimen .regimen-wrapper .regimen img {
+  max-width: 295px;
+}
+
+#regimen .regimen-wrapper .regimen span {
+  font-weight: 400;
+}
+
+#scm-banner {
+  width: 100%;
+}
+
+@media only screen and (max-width: 699px) {
+  #hero {
+    background-color: #f1efe8;
+  }
+  #hero .hero-img {
+    margin-bottom: -70%;
+  }
+  #hero .heroBox {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 100%;
+    padding: 0 4% 4rem 4%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #hero .heroBox .heroBox-new {
+    display: none;
+  }
+  #hero .heroBox h1 {
+    font-size: 4.4rem;
+  }
+  #hero .heroBox h3 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  #hero .heroBox h6 {
+    font-size: 1.8rem;
+    padding-right: 0;
+  }
+  #info .infoImg-left {
+    width: 15%;
+    float: left;
+    z-index: 4;
+    margin-top: -3rem;
+  }
+  #info .info-text {
+    position: relative;
+    top: unset;
+    left: unset;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    width: 70%;
+    padding: 0;
+  }
+  #info .info-text h2 {
+    margin-top: 0;
+    font-size: 4rem;
+  }
+  #info .info-text h6 {
+    font-size: 1.8rem;
+  }
+  #info .infoImg-right {
+    float: right;
+    width: 50%;
+    margin-top: -20rem;
+    max-height: 380px;
+  }
+  #products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #products .product {
+    width: 90%;
+    margin: 0 auto 4rem auto;
+  }
+  #products .product .product-img {
+    margin-top: 0;
+  }
+  #regimen h2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #regimen .regimen-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #regimen .regimen-wrapper .regimen {
+    width: 90%;
+    margin: 0 auto 3rem auto;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 699px) {
+  #hero .hero-img {
+    margin-bottom: -25%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .content-wrapper .button-cta {
+    font-size: 1.6rem;
+    padding: .6rem 2rem;
+  }
+  #hero {
+    padding-bottom: 4.4rem;
+  }
+  #hero .heroBox {
+    top: 1%;
+    padding-left: 4%;
+  }
+  #hero .heroBox .heroBox-new {
+    margin-left: -0.8rem;
+    margin-top: 0.6rem;
+  }
+  #hero .heroBox h1 {
+    font-size: 4.6rem;
+    margin-bottom: .6rem;
+  }
+  #hero .heroBox h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  #hero .heroBox h6 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-right: 0;
+    margin-top: 1.2rem;
+    margin-bottom: 1.4rem;
+  }
+  #info .info-text {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #info .info-text h2 {
+    margin-top: 0;
+  }
+  #info .infoImg-right {
+    width: 80%;
+    margin-top: 9rem;
+    margin-right: -6rem;
+  }
+  #products {
+    margin-top: -2rem;
+  }
+  #products .product .product-img {
+    margin-top: 0;
+  }
+  #regimen .regimen-wrapper {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  #regimen .regimen-wrapper .regimen img {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .content-wrapper .button-cta {
+    font-size: 1.8rem;
+    padding: .8rem 2rem;
+  }
+  #hero .heroBox {
+    top: 3%;
+  }
+  #hero .heroBox h1 {
+    margin-bottom: 1rem;
+  }
+  #hero .heroBox h3 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  #hero .heroBox h6 {
+    margin-bottom: 4rem;
+    line-height: 1.4;
+    font-size: 2rem;
+  }
+  #info .infoImg-left {
+    margin-top: -8rem;
+  }
+  #info .infoImg-right {
+    margin-top: 2rem;
+  }
+}
 --></style>
-<div class="content-wrapper">
-
+<div class="content-wrapper"><section id="hero">
+<div class="hero-img"><picture> <source srcset="/media/wysiwyg/content/collection/sc/super-collagen-products-hero-m.jpg" media="(max-width: 549px)" /> <source srcset="/media/wysiwyg/content/collection/sc/super-collagen-products-hero-bigger-m.jpg" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/super-collagen-products-hero.jpg" alt="DHC Super Collagen Products" /> </picture></div>
+<div class="heroBox">
+<div class="heroBox-new"><img src="/media/wysiwyg/content/collection/sc/hero-starred2.png" alt="New Super Collagen Products" /></div>
+<h1>Super Collagen Innovations</h1>
+<h3>Brightness. Hydration. Radiance.</h3>
+<h6>Our patented Dipeptide-8 complex delivers our highest concentration of micronized collagen to your skin&rsquo;s top layer. These high-potency formulations revitalize skin with radiant results.</h6>
+<p><a class="button-cta" href="/shop.html">shop now</a></p>
 </div>
+</section><!-- hero --><section id="info">
+<div class="infoImg-left"><picture> <source srcset="/media/wysiwyg/content/collection/sc/info-beaker-m.png" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/info-flask.png" alt="flask" /> </picture></div>
+<div class="info-text">
+<h2>Dipeptide-8</h2>
+<h6>Developed and patented in Japan, Dipeptide-8 is a smaller skin-firming collagen molecule that instantly absorbs to maximize hydration, promote elasticity and protect from free-radical damage. You&rsquo;ll see a smoother and brighter-looking complexion.</h6>
+</div>
+<div class="infoImg-right"><picture> <source srcset="/media/wysiwyg/content/collection/sc/info-molecule-m.png" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/info-dropper-beaker.jpg" alt="super collagen molecule graphic, dropper, beaker" /> </picture></div>
+</section><!-- info --><section id="products">
+<div class="product">
+<div class="product-img"><picture> <img src="/media/wysiwyg/content/collection/sc/product-super-collagen-supreme.png" alt="DHC Super Collagen Products" /> </picture></div>
+<h4>Super Collagen Supreme</h4>
+<p>An ultra-hydrating collagen elixir designed to combine oil&rsquo;s nourishing and moisturizing qualities with serum&rsquo;s easy absorption and targeted ingredients.<br />$28</p>
+<p><a class="button-cta" href="/super-collagen-supreme.html">shop now</a></p>
+</div>
+<div class="product">
+<div class="product-img"><picture> <img src="/media/wysiwyg/content/collection/sc/product-super-collagen-cream.png" alt="DHC Super Collagen Products" /> </picture></div>
+<h4>Super Collagen Cream</h4>
+<p>Powerful, concentrated Dipeptide-8 collagen peptides meet a nourishing complex of moisturizing and brightening botanicals in this midweight cream for all skin types.<br />$50</p>
+<p><a class="button-cta" href="/super-collagen-cream.html">shop now</a></p>
+</div>
+</section><!-- products --><section id="regimen">
+<h2>Experience the Regimen</h2>
+<div class="regimen-wrapper">
+<div class="regimen"><picture> <source srcset="/media/wysiwyg/content/collection/sc/sc-regimen-cleanse-m.jpg" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/sc-regimen-cleanse.jpg" alt="" /> </picture>
+<h4>Cleanse</h4>
+<p>Remove makeup and eliminate impurities.</p>
+</div>
+<div class="regimen"><picture> <source srcset="/media/wysiwyg/content/collection/sc/sc-regimen-enhance-m.jpg" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/sc-regimen-enhance.jpg" alt="" /> </picture>
+<h4>Enhance</h4>
+<p>Lock in softness with <span>Super Collagen Supreme</span>&rsquo;s innovative, weightless oil-serum.</p>
+</div>
+<div class="regimen"><picture> <source srcset="/media/wysiwyg/content/collection/sc/sc-regimen-moisturize-m.jpg" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/sc-regimen-moisturize.jpg" alt="" /> </picture>
+<h4>Moisturize</h4>
+<p>Protect and brighten with <span>Super Collagen Cream</span>&rsquo;s rich, botanical formula.</p>
+</div>
+</div>
+</section><!-- regimen --><section id="scm-banner"><a href="https://www.dhccare.com/info-super-collagen-mist"> <picture> <source srcset="/media/wysiwyg/content/collection/sc/scm-banner-m.png" media="(max-width: 699px)" /> <img src="/media/wysiwyg/content/collection/sc/scm-banner.png" alt="Top Seller! Super Collagen Mist. Learn more." /> </picture> </a></section><!-- scm-banner --></div>
+<!-- content wrapper -->
