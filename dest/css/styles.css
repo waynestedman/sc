@@ -284,9 +284,10 @@ body {
 
 #info .infoImg-left {
   display: inline-block;
-  width: 25%;
+  width: 24%;
   float: left;
   margin-top: -6rem;
+  margin-left: -1.3rem;
 }
 
 #info .info-text {
@@ -490,10 +491,11 @@ body {
   }
   #hero .heroBox {
     top: 1%;
-    padding-left: 3%;
+    padding-left: 4%;
   }
   #hero .heroBox .heroBox-new {
-    margin-left: 0;
+    margin-left: -0.8rem;
+    margin-top: 0.6rem;
   }
   #hero .heroBox h1 {
     font-size: 4.6rem;

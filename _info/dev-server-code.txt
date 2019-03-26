@@ -237,8 +237,8 @@
 }
 
 #hero .heroBox .heroBox-new {
-  width: 40%;
-  margin-left: -2.8rem;
+  width: 24%;
+  margin-left: -1.3rem;
 }
 
 #hero .heroBox h1 {
@@ -282,7 +282,7 @@
   display: inline-block;
   width: 75%;
   float: right;
-  margin-top: -0.4rem;
+  margin-top: 0;
 }
 
 #products {
@@ -470,10 +470,11 @@
   }
   #hero .heroBox {
     top: 1%;
-    padding-left: 3%;
+    padding-left: 4%;
   }
   #hero .heroBox .heroBox-new {
-    margin-left: 0;
+    margin-left: -0.8rem;
+    margin-top: 0.6rem;
   }
   #hero .heroBox h1 {
     font-size: 4.6rem;
@@ -546,100 +547,50 @@
   }
 }
 --></style>
-  <div class="content-wrapper">
-    <section id="hero">
-      <div class="hero-img">
-        <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero-m.jpg" media="(max-width: 549px)" />
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero-bigger-m.jpg" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero.jpg" alt="DHC Super Collagen Products">
-        </picture>
-      </div>
-      <div class="heroBox">
-        <div class="heroBox-new">
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/hero-starred.png" alt="New Super Collagen Products">
-        </div>
-        <h1>Super Collagen Innovations</h1>
-        <h3>Brightness. Hydration. Radiance.</h3>
-        <h6>Our patented Dipeptide-8 complex delivers our highest concentration of micronized collagen to your skin’s top layer. These high-potency formulations revitalize skin with radiant results.</h6>
-        <p><a href="https://www.dhccare.com/shop.html" class="button-cta">shop now</a></p>
-      </div>
-    </section> <!-- hero -->
-    <section id="info">
-      <div class="infoImg-left">
-        <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-beaker-m.png" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-flask.png" alt="flask">
-        </picture>
-      </div>
-      <div class="info-text">
-        <h2>Dipeptide-8</h2>
-        <h6>Developed and patented in Japan, Dipeptide-8 is a smaller skin-firming collagen molecule that instantly absorbs to maximize hydration, promote elasticity and protect from free-radical damage. You’ll see a smoother and brighter-looking complexion.</h6>
-      </div>
-      <div class="infoImg-right">
-        <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-molecule-m.png" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-dropper-beaker.jpg" alt="super collagen molecule graphic, dropper, beaker">
-        </picture>
-      </div>
-    </section> <!-- info -->
-    <section id="products">
-      <div class="product">
-        <div class="product-img">
-          <picture>
-            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/product-super-collagen-supreme.png" alt="DHC Super Collagen Products">
-          </picture>
-        </div>
-        <h4>Super Collagen Supreme</h4>
-        <p>An ultra-hydrating collagen elixir designed to combine oil’s nourishing and moisturizing qualities with serum’s easy absorption and targeted ingredients.<br>$28</p>
-        <p><a href="https://www.dhccare.com/super-collagen-supreme.html" class="button-cta">shop now</a></p>
-      </div>
-      <div class="product">
-        <div class="product-img">
-          <picture>
-            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/product-super-collagen-cream.png" alt="DHC Super Collagen Products">
-          </picture>
-        </div>
-        <h4>Super Collagen Cream</h4>
-        <p>Powerful, concentrated Dipeptide-8 collagen peptides meet a nourishing complex of moisturizing and brightening botanicals in this midweight cream for all skin types.<br>$50</p>
-        <p><a href="https://www.dhccare.com/super-collagen-cream.html" class="button-cta">shop now</a></p>
-      </div>
-    </section> <!-- products -->
-    <section id="regimen">
-      <h2>Experience the Regimen</h2>
-      <div class="regimen-wrapper">
-        <div class="regimen">
-          <picture>
-            <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-cleanse-m.jpg" media="(max-width: 699px)" />
-            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-cleanse.jpg" alt="">
-          </picture>
-          <h4>Cleanse</h4>
-          <p>Remove makeup and eliminate impurities.</p>
-        </div>
-        <div class="regimen">
-          <picture>
-            <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-enhance-m.jpg" media="(max-width: 699px)" />
-            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-enhance.jpg" alt="">
-          </picture>
-          <h4>Enhance</h4>
-          <p>Lock in softness with <span>Super Collagen Supreme</span>’s innovative, weightless oil-serum.</p>
-        </div>
-        <div class="regimen">
-          <picture>
-            <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-moisturize-m.jpg" media="(max-width: 699px)" />
-            <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-moisturize.jpg" alt="">
-          </picture>
-          <h4>Moisturize</h4>
-          <p>Protect and brighten with <span>Super Collagen Cream</span>’s rich, botanical formula.</p>
-        </div>
-      </div>
-    </section> <!-- regimen -->
-    <section id="scm-banner">
-      <a href="https://www.dhccare.com/info-super-collagen-mist">
-        <picture>
-          <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/scm-banner-m.png" media="(max-width: 699px)" />
-          <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/scm-banner.png" alt="Top Seller! Super Collagen Mist. Learn more.">
-        </picture>
-      </a>
-    </section> <!-- scm-banner -->
-  </div> <!-- content wrapper -->
+<div class="content-wrapper"><section id="hero">
+<div class="hero-img"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero-m.jpg" media="(max-width: 549px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero-bigger-m.jpg" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/super-collagen-products-hero.jpg" alt="DHC Super Collagen Products" /> </picture></div>
+<div class="heroBox">
+<div class="heroBox-new"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/hero-starred2.png" alt="New Super Collagen Products" /></div>
+<h1>Super Collagen Innovations</h1>
+<h3>Brightness. Hydration. Radiance.</h3>
+<h6>Our patented Dipeptide-8 complex delivers our highest concentration of micronized collagen to your skin&rsquo;s top layer. These high-potency formulations revitalize skin with radiant results.</h6>
+<p><a class="button-cta" href="https://www.dhccare.com/shop.html">shop now</a></p>
+</div>
+</section><!-- hero --><section id="info">
+<div class="infoImg-left"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-beaker-m.png" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-flask.png" alt="flask" /> </picture></div>
+<div class="info-text">
+<h2>Dipeptide-8</h2>
+<h6>Developed and patented in Japan, Dipeptide-8 is a smaller skin-firming collagen molecule that instantly absorbs to maximize hydration, promote elasticity and protect from free-radical damage. You&rsquo;ll see a smoother and brighter-looking complexion.</h6>
+</div>
+<div class="infoImg-right"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-molecule-m.png" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/info-dropper-beaker.jpg" alt="super collagen molecule graphic, dropper, beaker" /> </picture></div>
+</section><!-- info --><section id="products">
+<div class="product">
+<div class="product-img"><picture> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/product-super-collagen-supreme.png" alt="DHC Super Collagen Products" /> </picture></div>
+<h4>Super Collagen Supreme</h4>
+<p>An ultra-hydrating collagen elixir designed to combine oil&rsquo;s nourishing and moisturizing qualities with serum&rsquo;s easy absorption and targeted ingredients.<br />$28</p>
+<p><a class="button-cta" href="https://www.dhccare.com/super-collagen-supreme.html">shop now</a></p>
+</div>
+<div class="product">
+<div class="product-img"><picture> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/product-super-collagen-cream.png" alt="DHC Super Collagen Products" /> </picture></div>
+<h4>Super Collagen Cream</h4>
+<p>Powerful, concentrated Dipeptide-8 collagen peptides meet a nourishing complex of moisturizing and brightening botanicals in this midweight cream for all skin types.<br />$50</p>
+<p><a class="button-cta" href="https://www.dhccare.com/super-collagen-cream.html">shop now</a></p>
+</div>
+</section><!-- products --><section id="regimen">
+<h2>Experience the Regimen</h2>
+<div class="regimen-wrapper">
+<div class="regimen"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-cleanse-m.jpg" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-cleanse.jpg" alt="" /> </picture>
+<h4>Cleanse</h4>
+<p>Remove makeup and eliminate impurities.</p>
+</div>
+<div class="regimen"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-enhance-m.jpg" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-enhance.jpg" alt="" /> </picture>
+<h4>Enhance</h4>
+<p>Lock in softness with <span>Super Collagen Supreme</span>&rsquo;s innovative, weightless oil-serum.</p>
+</div>
+<div class="regimen"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-moisturize-m.jpg" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/sc-regimen-moisturize.jpg" alt="" /> </picture>
+<h4>Moisturize</h4>
+<p>Protect and brighten with <span>Super Collagen Cream</span>&rsquo;s rich, botanical formula.</p>
+</div>
+</div>
+</section><!-- regimen --><section id="scm-banner"><a href="https://www.dhccare.com/info-super-collagen-mist"> <picture> <source srcset="https://www.dhccare.com/media/wysiwyg/dev_test/sc/scm-banner-m.png" media="(max-width: 699px)" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/sc/scm-banner.png" alt="Top Seller! Super Collagen Mist. Learn more." /> </picture> </a></section><!-- scm-banner --></div>
+<!-- content wrapper -->
